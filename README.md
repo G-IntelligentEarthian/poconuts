@@ -85,24 +85,19 @@ The RFQ form in `js/main.js` validates user input, generates an inquiry referenc
 }
 ```
 
-### To connect a live CRM or email webhook:
-In `js/main.js`, locate the `initQuoteForm()` function and replace the `console.info` simulation with an active `fetch()` request:
+### Active Email Notification Routing
+The form is actively configured to send formatted B2B inquiries directly to:
+- **Primary Recipient**: `gggaravind@gmail.com`
+- **CC Recipient**: `akcvarun@gmail.com`
 
-```javascript
-fetch('https://your-crm-webhook-endpoint.com/api/v1/inquiry', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(payload)
-})
-.then(response => response.json())
-.then(data => { /* show success modal */ })
-.catch(error => { console.error('Webhook error:', error); });
-```
-Compatible out of the box with:
-- **Make.com / Zapier Webhooks** (for routing to Google Sheets, Slack, and email)
-- **HubSpot Inbound Webhooks**
-- **Zoho CRM Lead API**
-- **SendGrid / Postmark Inbound Webhook**
+**First Submission Activation Note:**
+When the first test submission is made, FormSubmit sends a one-time verification email to `gggaravind@gmail.com` with a button: *"Activate Form"*. Click that once, and all future buyer inquiries will automatically land in both inboxes with complete company, country, volume, and contact details!
+
+---
+
+### Connecting to CRM / Webhook (Optional Advanced Integration)
+If you also want to route inquiries into a CRM (HubSpot, Zoho CRM, Salesforce) or Google Sheets:
+In `js/main.js`, add a secondary webhook POST request inside `initQuoteForm()` pointing to your CRM webhook or Make.com / Zapier trigger.
 
 ---
 

@@ -243,8 +243,44 @@
 
       console.info('[PoConuts B2B Export Gateway] Inbound RFQ Payload:', payload);
 
-      // Simulate webhook / CRM dispatch (e.g., Zapier, Make, HubSpot, Zoho, or email gateway)
-      setTimeout(() => {
+      // Email dispatch to gggaravind@gmail.com & akcvarun@gmail.com
+      const emailPayload = {
+        _subject: `[PoConuts B2B Inquiry] ${payload.company} (${payload.country}) - ${payload.referenceId}`,
+        _cc: 'akcvarun@gmail.com',
+        _template: 'table',
+        _captcha: 'false',
+        'Reference ID': payload.referenceId,
+        'Company Name': payload.company,
+        'Contact Person': payload.contactName,
+        'Email Address': payload.email,
+        'Phone / WhatsApp': payload.phone,
+        'Destination Country': payload.country,
+        'Port of Discharge (POD)': payload.portOfDischarge || 'To be confirmed',
+        'Product Interest': payload.productInterest,
+        'Packaging Preference': payload.packaging,
+        'Estimated Volume': payload.volume,
+        'Requested Incoterm': payload.incoterm,
+        'Buyer Specifications / Notes': payload.message || 'None provided',
+        'Timestamp (UTC)': payload.timestamp,
+        'Language Selected': payload.language.toUpperCase()
+      };
+
+      fetch('https://formsubmit.co/ajax/gggaravind@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(emailPayload)
+      })
+      .then(res => res.json())
+      .then(data => {
+        console.info('[PoConuts Email Gateway Success]:', data);
+      })
+      .catch(err => {
+        console.warn('[PoConuts Email Gateway Warning]:', err);
+      })
+      .finally(() => {
         if (submitBtn) {
           submitBtn.disabled = false;
           submitBtn.innerHTML = originalText;
@@ -264,7 +300,7 @@
 
         // Store latest RFQ in sessionStorage for optional summary export
         sessionStorage.setItem('last_poconuts_rfq', JSON.stringify(payload));
-      }, 750);
+      });
     });
 
     // Reset button to submit new inquiry
