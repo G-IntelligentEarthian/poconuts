@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Outer Coconut Husk -->
+  <path d="M50 92C75 92 92 72 92 50C92 28 75 8 50 8C25 8 8 28 8 50C8 72 25 92 50 92Z" fill="#C49A45" stroke="#936D26" stroke-width="3"/>
+  <!-- Coconut Inner Shell & Endocarp -->
+  <path d="M50 84C70 84 84 68 84 50C84 32 70 16 50 16C30 16 16 32 16 50C16 68 30 84 50 84Z" fill="#5C381E"/>
+  <!-- Fresh White Meat (Copra) -->
+  <path d="M50 78C66 78 78 64 78 50C78 36 66 22 50 22C34 22 22 36 22 50C22 64 34 78 50 78Z" fill="#FDFBF7"/>
+  <!-- Coconut Cavity -->
+  <circle cx="50" cy="50" r="20" fill="#E8F4EE"/>
+  
+  <!-- Protective Tuft Accent -->
+  <path d="M50 7C53 14 57 21 64 25C57 22 52 23 48 27C47 21 43 17 38 15C43 14 47 10 50 7Z" fill="#8C6527"/>
+
+  <!-- Farm Fresh Green Palm Accent -->
+  <path d="M72 28C78 17 88 12 98 10C96 17 94 24 86 31C92 28 98 29 102 30C96 36 90 41 80 43C87 45 92 48 95 53C86 54 79 49 73 44" fill="#1B6A43" stroke="#0E4429" stroke-width="2" stroke-linejoin="round"/>
+</svg>

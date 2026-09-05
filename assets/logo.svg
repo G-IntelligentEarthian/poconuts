@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" fill="none">
+  <!-- Brand Icon -->
+  <g transform="translate(10, 10)">
+    <!-- Outer Coconut Husk -->
+    <path d="M40 76C62 76 76 58 76 40C76 22 62 4 40 4C18 4 4 22 4 40C4 58 18 76 40 76Z" fill="#C49A45" stroke="#936D26" stroke-width="2.5"/>
+    <!-- Coconut Inner Shell & Endocarp -->
+    <path d="M40 70C58 70 70 55 70 40C70 25 58 10 40 10C22 10 10 25 10 40C10 55 22 70 40 70Z" fill="#5C381E"/>
+    <!-- Fresh White Meat (Copra) -->
+    <path d="M40 65C54 65 65 52 65 40C65 28 54 15 40 15C26 15 15 28 15 40C15 52 26 65 40 65Z" fill="#FDFBF7"/>
+    <!-- Sweet Coconut Water Cavity -->
+    <ellipse cx="40" cy="40" rx="18" ry="18" fill="#EDF7F2"/>
+    
+    <!-- Protective Tuft Accent (Symbol of Semi-Husked Coconut) -->
+    <path d="M40 3C42 10 45 16 52 20C46 17 41 18 38 22C37 17 34 13 30 11C34 10 37 6 40 3Z" fill="#8C6527"/>
+
+    <!-- Farm Fresh Palm Leaf Accent -->
+    <path d="M60 22C66 12 75 8 84 6C82 12 80 18 73 24C78 22 84 22 88 23C82 28 77 33 68 35C74 36 78 39 81 43C73 44 67 40 61 36" fill="#1B6A43" stroke="#0E4429" stroke-width="1.5" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Typography: PoConuts -->
+  <g transform="translate(108, 20)">
+    <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="42" fill="#0C3B2E" letter-spacing="-0.5">
+      Po<tspan fill="#C49A45">Co</tspan>nuts
+    </text>
+    <text x="3" y="65" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="11.5" fill="#5B7065" letter-spacing="3.8">
+      POLLACHI • INDIA
+    </text>
+  </g>
+</svg>
