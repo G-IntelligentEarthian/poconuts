@@ -88,7 +88,7 @@ The RFQ form in `js/main.js` validates user input, generates an inquiry referenc
 ### Active Email Notification Routing
 The form is actively configured to send formatted B2B inquiries directly to:
 - **Primary Recipient**: `gggaravind@gmail.com`
-- **CC Recipient**: `akcvarun@gmail.com`
+- **CC Recipient**: `arunkumarakcv@gmail.com`
 
 **First Submission Activation Note:**
 When the first test submission is made, FormSubmit sends a one-time verification email to `gggaravind@gmail.com` with a button: *"Activate Form"*. Click that once, and all future buyer inquiries will automatically land in both inboxes with complete company, country, volume, and contact details!

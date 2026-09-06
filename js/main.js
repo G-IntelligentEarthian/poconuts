@@ -243,10 +243,10 @@
 
       console.info('[PoConuts B2B Export Gateway] Inbound RFQ Payload:', payload);
 
-      // Email dispatch to gggaravind@gmail.com & akcvarun@gmail.com
+      // Email dispatch to gggaravind@gmail.com & arunkumarakcv@gmail.com
       const emailPayload = {
         _subject: `[PoConuts B2B Inquiry] ${payload.company} (${payload.country}) - ${payload.referenceId}`,
-        _cc: 'akcvarun@gmail.com',
+        _cc: 'arunkumarakcv@gmail.com',
         _template: 'table',
         _captcha: 'false',
         'Reference ID': payload.referenceId,
